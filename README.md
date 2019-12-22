@@ -1,4 +1,4 @@
-#Ninja Game
+Ninja Game
 
 A small game to test your reflexes.
 
