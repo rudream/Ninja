@@ -1,5 +1,9 @@
-Ninja Game
+Are you a Ninja?
 
-A small game to test your reflexes.
+A game to test your reflexes
 
-Built from scratch using HTML5, CSS3 and JavaScript.
+Features 2 game modes:
+- Ninja Test (Click on a randomly appearing objects as fast as you can)
+- Reaction Time (Click as soon as the screen changes colour)
+
+Built from scratch using JavaScript with JQuery, CSS3 and HTML5.
