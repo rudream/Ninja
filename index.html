@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./resources/ninja.ico">
+    <title>Are you a Ninja?</title>
+</head>
+<body>
+    <div class="window">
+        <h1>Test your Ninja Skills</h1>
+
+        <div class="modeSelection slide">
+            <h2>SELECT A GAME MODE</h2>
+            <ul>
+                <li id="ninjaSelection">Ninja Test</li>
+                <li id="reactionSelection">Reaction Time</li>
+            </ul>
+            <button id="selectionProceed" class="bigButton">Continue</button>
+        </div>
+
+        <div class="reactionInstructions slide">
+            <h2>INSTRUCTIONS</h2>
+            <p>When you see the screen turn red, click anywhere as fast as you can. <br><br>If you click too soon, it won't count.</p>
+            <button id="begin" class="bigButton">Start</button><br>
+            <button class="backToSelection backButton">Go Back</button>
+        </div>
+
+        <div class="trialsSelection slide">
+            <h2>HOW MANY TRIALS?</h2>
+            <ul>
+                <li id="trials5">5 Trials</li>
+                <li id="trials10" class="selected">10 trials</li>
+                <li id="trials20">20 trials</li>
+            </ul>
+            <button id="toDifficulty" class="bigButton">Continue</button><br>
+            <button class="backToSelection backButton">Go Back</button>
+        </div>
+
+        <div class="difficultySelection slide">
+            <h2>SELECT DIFFICULTY</h2>
+            <ul>
+                <li id="easy">Easy</li>
+                <li id="medium" class="selected">Medium</li>
+                <li id="hard">NINJA!</li>
+            </ul>
+            <button id="toDifficulty" class="bigButton">Start</button><br>
+            <button class="backToTrials backButton">Go Back</button>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="./scripts/menu.js"></script>
+    <script type="text/javascript" src="./scripts/game.js"></script>
+</body>
+</html>

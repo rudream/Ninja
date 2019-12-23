@@ -1,0 +1,200 @@
+/* GLOBAL */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --darker: #381306;
+  --dark: #621708;
+  --light: #941b0c;
+  --lighter: #bc3908;
+  --background: #f6aa1c;
+}
+
+@font-face {
+  font-family: Ninjos;
+  src: url(./resources/Ninjos.ttf);
+}
+
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  background: var(--background);
+  user-select: none;
+  overflow: hidden;
+}
+
+li {
+    list-style: none;
+  }
+  
+a {
+    text-decoration: none;
+    color: var(--darker);
+  }
+  
+  
+
+/* WINDOW */
+
+.window {
+  position: relative;
+  font-family: Ninjos;
+  background: var(--light);
+  width: 90vw;
+  height: 90vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 5vw;
+  box-shadow: 0px 0px 20px 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  border: 3px solid var(--dark);
+}
+
+.window h1 {
+  background: var(--lighter);
+  color: var(--dark);
+  max-height: 30%;
+  width: 100%;
+  text-align: center;
+  padding-top: 0.1rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.slide{
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  color: var(--darker);
+  max-width: 100%;
+  font-size: 3vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.slide .bigButton{
+    font-family: Poppins;
+    font-weight: 600;
+    background: var(--lighter);
+    padding: 2vh 6vw;
+    border: 0.2vw solid var(--darker);
+    color: var(--darker);
+    font-size: 2vw;
+}
+
+.slide button:hover{
+    cursor: pointer;
+}
+
+.slide button:focus{
+    outline: none;
+}
+
+.selected{
+    border: 0.2vw solid var(--lighter);
+}
+
+.slide h2{
+    font-family: Poppins;
+    display: inline-block;
+    max-width: 100%;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.slide li{
+    display: block;
+    width: 30vw;
+    padding: 1vh 2vw;
+    margin: auto;
+    margin-bottom: 5vh;
+    font-weight: 600;
+    background: var(--dark);
+    color: var(--lighter);
+}
+
+.slide li:nth-child(1){
+    margin-top: 5vh;
+}
+
+.slide  li:hover{
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.backButton{
+    font-family: Poppins;
+    font-weight: 600;
+    color: var(--darker);
+    margin-top: 1vh;
+    padding: 2vh 2vw;
+    font-size: 1vw;
+    border: 0.2vw solid var(--darker);
+    background: #a3411d;
+}
+
+/* MODE SELECTION */
+
+.modeSelection ul{
+    margin-bottom: 9vh;
+}
+
+.modeSelection{
+    display: block;
+}
+
+/* REACTION INSTRUCTIONS */
+
+.reactionInstructions{
+    left: 50%;
+    top: 50%;
+    display: none;
+}
+
+
+.reactionInstructions p{
+    font-size: 2vw;
+    user-select: text;
+}
+
+.reactionInstructions h2{
+    margin-bottom: 5vh;
+}
+
+.reactionInstructions button{
+    margin-top: 3vh;
+}
+
+
+/* TRIALS SELECTION */
+
+.trialsSelection{
+    display: none;
+}
+
+.trialsSelection .backButton{
+    margin-top: 0;
+}
+
+.trialsSelection li{
+    margin-top: 1vh;
+    margin-bottom: 0vh;
+}
+
+.trialsSelection li:nth-child(3){
+    margin-bottom: 3vh;
+}
+
+/* DIFFICULTY SELECTION */
+
+.difficultySelection{
+    display: none;
+}
+
+.difficultySelection li{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
