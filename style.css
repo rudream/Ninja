@@ -221,15 +221,11 @@ a {
     transform: translatex(-50%);
   }
 
-.window{
-    display: block;
-}
 
 /* REACTION GAME */
 
 
 .reactionGame #headerR{
-  display: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,6 +240,7 @@ a {
   border-bottom: 4px solid var(--darker);
   border-left: 4px solid var(--darker);
   border-right: 4px solid var(--darker);
+  display: none;
 }
 
 .reactionGame h3{
@@ -261,6 +258,7 @@ a {
 .reactionGame{
   height: 100vh;
   width: 100vw;
+  display: none;
 }
 
 
@@ -286,4 +284,116 @@ a {
 
 #playAgainReaction{
   display: none;
+}
+
+/* NINJA GAME */
+
+#headerN{
+  width: 100vw;
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  grid-template-rows: 1vh 1fr 1fr 1vh;
+  color: black;
+  background-color: var(--lighter);
+  border-bottom: 4px solid var(--darker);
+  align-items: center;
+}
+
+#accHead{
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+#reactHead{
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+
+#ninjaHead{
+  grid-column: 4/6;
+  grid-row: 2/3;
+}
+
+#accHead, #reactHead, #ninjaHead{
+  font-family: Poppins;
+  text-align: center;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+#accScore, #ninjaScore, #reactScore{
+  font-family: Poppins;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+#accScore{
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+#reactScore{
+  grid-column: 3/5;
+  grid-row: 3/4;
+}
+
+#ninjaScore{
+  grid-column: 4/6;
+  grid-row: 3/4;
+}
+
+#ninjaScreen{
+  height: 90vh;
+  width: 100vw;
+  display: none;
+}
+
+#target{
+  height: 12vh;
+  width: 12vh;
+  background: green;
+  border: 0.1vw solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 1%;
+  top: 85%;
+  display: none;
+}
+
+/* PLAY AGAIN NINJA */
+
+#playAgainN, #backToMenuN{
+  font-family: Poppins;
+  display: block;
+  padding: 1vh 2vw;
+  margin: auto;
+  margin-bottom: 1vh;
+  font-weight: 600;
+  background: var(--dark);
+  color: var(--lighter);
+  text-align: center;
+  cursor: pointer;
+}
+
+#playAgainN{
+  width: 70%;
+  font-size: 1.1vw;
+  grid-row: 5/6;
+  grid-column: 2/4;
+  display: none;
+}
+
+#backToMenuN{
+  width: 70%;
+  font-size: 1.1vw;
+  grid-row: 5/6;
+  grid-column: 4/6;
+  display: none;
+}
+
+
+#reactionTime{
+  text-align: center !important;
 }

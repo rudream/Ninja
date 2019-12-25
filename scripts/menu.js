@@ -1,5 +1,5 @@
 var ninja;
-var trials = 10;
+var trials = 20;
 var difficulty = 2;
 
 
@@ -18,25 +18,25 @@ $('#ninjaSelection').click(function(){
     $('#reactionSelection').removeClass("selected");
 });
 
-$('#trials5').click(function(){
-    trials = 5;
-    $('#trials5').addClass("selected");
-    $('#trials10').removeClass("selected");
-    $('#trials20').removeClass("selected");
-})
-
 $('#trials10').click(function(){
     trials = 10;
     $('#trials10').addClass("selected");
-    $('#trials5').removeClass("selected");
     $('#trials20').removeClass("selected");
+    $('#trials30').removeClass("selected");
 })
 
 $('#trials20').click(function(){
-    trials = 5;
+    trials = 20;
     $('#trials20').addClass("selected");
     $('#trials10').removeClass("selected");
-    $('#trials5').removeClass("selected");
+    $('#trials30').removeClass("selected");
+})
+
+$('#trials30').click(function(){
+    trials = 30;
+    $('#trials30').addClass("selected");
+    $('#trials20').removeClass("selected");
+    $('#trials10').removeClass("selected");
 })
 
 

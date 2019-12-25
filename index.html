@@ -33,9 +33,9 @@
         <div class="trialsSelection slide">
             <h2>HOW MANY TRIALS?</h2>
             <ul>
-                <li id="trials5">5 Trials</li>
-                <li id="trials10" class="selected">10 trials</li>
-                <li id="trials20">20 trials</li>
+                <li id="trials10">10 Trials</li>
+                <li id="trials20" class="selected">20 trials</li>
+                <li id="trials30">30 trials</li>
             </ul>
             <button id="toDifficulty" class="bigButton">Continue</button><br>
             <button class="backToSelection backButton">Go Back</button>
@@ -48,7 +48,7 @@
                 <li id="medium" class="selected">Medium</li>
                 <li id="hard">NINJA!</li>
             </ul>
-            <button class="bigButton begin">Start</button><br>
+            <button class="bigButton begin" id="startNinja">Start</button><br>
             <button class="backToTrials backButton">Go Back</button>
         </div>
 
@@ -65,8 +65,25 @@
                 </ul>
             </div>
         </div>
+        <div class="ninjaGame">
+            <div id="headerN">
+                <h2 id="accHead">Accuracy</h2>
+                <h3 id="reactHead">Avg. Time</h3>
+                <h3 id="ninjaHead">Ninja Score</h3>
+                <h2 id="accScore">N/A</h2>
+                <h2 id="reactScore">N/A</h2>
+                <h2 id="ninjaScore">N/A</h2>
+                <h3 id="playAgainN">Play Again</h3>
+                <h3 id="backToMenuN">Back to Menu</h3>
+            </div>
+            <div id="ninjaScreen">
+                <div id="target">
+                </div>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" src="./scripts/menu.js"></script>
     <script type="text/javascript" src="./scripts/reaction.js"></script>
+    <script type="text/javascript" src="./scripts/ninja.js"></script>
 </body>
 </html>

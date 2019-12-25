@@ -1,36 +1,35 @@
-var countdown;
+var countdownR;
 var clickState = false;
 var timerGoing = false;
 var clickable = false;
-var timeleft;
+var timeleftR;
 var timer1;
 var timesPlayedReaction = 0;
 
 $('#startReaction').click(function(){
     $('.window').hide(100);
     $('#headerR').show(100);
-    startGame(3, "reaction");
+    $('.reactionGame').show();
+    startReaction(3);
 })
 
 $('.reactionGame').click(function(){
     clickReaction();
 });
 
-function startGame(seconds, game){
+function startReaction(seconds){
     cancelled = false;
     $('#playAgainReaction').hide(100);
     $('.reactionGame').css({'background':'var(--background)'})
-    timeleft = seconds;
-    countdown = setInterval(function(){
-        $('#countdown').html(timeleft);
+    timeleftR = seconds;
+    countdownR = setInterval(function(){
+        $('#countdown').html(timeleftR);
         $('#countdown').show();
-        timeleft -= 1;
-        if(timeleft < 0){
-            clearInterval(countdown);
-            if(game=="reaction"){
-                $('#countdown').hide();
-                reactionTest();
-            }
+        timeleftR -= 1;
+        if(timeleftR < 0){
+            clearInterval(countdownR);
+            $('#countdown').hide();
+            reactionTest();
         }
         }, 1000);
 }
@@ -58,7 +57,7 @@ function clickReaction(){
             $('.reactionGame').css({'background':'red'});
             $('#reactionTime').html("TOO SOON!");
             setTimeout(function(){
-                startGame(3, "reaction");
+                startReaction(3);
             }, 800);
         }
     }
@@ -69,15 +68,15 @@ function postReaction(){
 }
 
 $('#playAgainR').click(function(){
-    startGame(3, "reaction");
+    startReaction(3);
 })
 
 $('#backToMenuR').click(function(){
     $('#headerR').hide(100);
-    $('.modeSelection').show(1);
-    $('.reactionInstructions').hide(1);
-    $('.trialsSelection').hide(1);
-    $('.difficultySelection').hide(1);
-    $('.window').show(100);
+    $('.modeSelection').show();
+    $('.reactionInstructions').hide();
+    $('.trialsSelection').hide();
+    $('.difficultySelection').hide();
+    $('.window').show(350);
 })
 
