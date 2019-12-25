@@ -60,7 +60,7 @@ a {
   max-height: 30%;
   width: 100%;
   text-align: center;
-  padding-top: 0.1rem;
+  padding: 0;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
@@ -439,7 +439,7 @@ a {
   text-align: center !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .slide .bigButton {
     font-size: 5vw;
     width: 50vw;
@@ -468,6 +468,12 @@ a {
 
   .selected {
     border: 1vw solid var(--lighter);
+  }
+
+  .window h1{
+    font-size: 5vw;
+    height: 4%;
+    padding-top: 2%;
   }
 
   #headerR h2 {
