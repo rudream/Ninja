@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   --darker: #381306;
   --dark: #621708;
   --light: #941b0c;
@@ -22,9 +22,9 @@ body {
   max-height: 100vh;
   background: var(--background);
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   overflow: hidden;
 }
 
@@ -49,7 +49,7 @@ a {
   margin-bottom: 5vh;
   margin-left: 5vw;
   -webkit-box-shadow: 0px 0px 20px 1rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 20px 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 1rem rgba(0, 0, 0, 0.3);
   border-radius: 2rem;
   border: 3px solid var(--dark);
 }
@@ -74,11 +74,9 @@ a {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-
-
 
 .slide .bigButton {
   font-family: Poppins;
@@ -128,7 +126,7 @@ a {
 .slide li:hover {
   cursor: pointer;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .backButton {
@@ -163,9 +161,9 @@ a {
 .reactionInstructions p {
   font-size: 2vw;
   -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 
 .reactionInstructions h2 {
@@ -206,74 +204,71 @@ a {
   margin-bottom: 2vh;
 }
 
-
 /* GAME */
 
-.gameScreen{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    background-color: var(--background);
+.gameScreen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-color: var(--background);
 }
 
-#countdown{
-    font-family: Ninjos;
-    font-size: 15vw;
-    height: 90vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translatex(-50%);
-            transform: translatex(-50%);
-  }
-
+#countdown {
+  font-family: Ninjos;
+  font-size: 15vw;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+  transform: translatex(-50%);
+}
 
 /* REACTION GAME */
 
-
-.reactionGame #headerR{
+.reactionGame #headerR {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   color: black;
   background-color: var(--lighter);
   padding: 1vh 2vw;
@@ -284,28 +279,27 @@ a {
   display: none;
 }
 
-.reactionGame h3{
+.reactionGame h3 {
   font-family: Poppins;
   font-weight: 700;
   font-size: 2vw;
 }
 
-.reactionGame h2{
+.reactionGame h2 {
   font-family: Poppins;
   font-weight: 300;
   font-size: 1.5vw;
 }
 
-.reactionGame{
+.reactionGame {
   height: 100vh;
   width: 100vw;
   display: none;
 }
 
-
 /* PLAY AGAIN REACTION */
 
-#playAgainReaction li{
+#playAgainReaction li {
   font-family: Poppins;
   display: block;
   width: 10vw;
@@ -319,18 +313,17 @@ a {
   cursor: pointer;
 }
 
-#playAgainReaction li:nth-child(1){
+#playAgainReaction li:nth-child(1) {
   margin-top: 3vh;
 }
 
-#playAgainReaction{
+#playAgainReaction {
   display: none;
 }
 
-
 /* NINJA GAME */
 
-#headerN{
+#headerN {
   width: 100vw;
   height: 10vh;
   display: grid;
@@ -340,61 +333,65 @@ a {
   background-color: var(--lighter);
   border-bottom: 4px solid var(--darker);
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-#accHead{
+#accHead {
   grid-column: 2/4;
   grid-row: 2/3;
 }
 
-#reactHead{
+#reactHead {
   grid-column: 3/5;
   grid-row: 2/3;
 }
 
-#ninjaHead{
+#ninjaHead {
   grid-column: 4/6;
   grid-row: 2/3;
 }
 
-#accHead, #reactHead, #ninjaHead{
+#accHead,
+#reactHead,
+#ninjaHead {
   font-family: Poppins;
   text-align: center;
   font-size: 1.2vw;
   font-weight: 600;
 }
 
-#accScore, #ninjaScore, #reactScore{
+#accScore,
+#ninjaScore,
+#reactScore {
   font-family: Poppins;
   font-weight: 400;
   text-align: center;
   font-size: 1.5vw;
 }
 
-#accScore{
+#accScore {
   grid-column: 2/4;
   grid-row: 3/4;
 }
 
-#reactScore{
+#reactScore {
   grid-column: 3/5;
   grid-row: 3/4;
 }
 
-#ninjaScore{
+#ninjaScore {
   grid-column: 4/6;
   grid-row: 3/4;
 }
 
-#ninjaScreen{
+#ninjaScreen {
   height: 90vh;
   width: 100vw;
   display: none;
 }
 
-#target{
+#target {
   height: 12vh;
   width: 12vh;
   background: green;
@@ -408,7 +405,8 @@ a {
 
 /* PLAY AGAIN NINJA */
 
-#playAgainN, #backToMenuN{
+#playAgainN,
+#backToMenuN {
   font-family: Poppins;
   display: block;
   padding: 1vh 2vw;
@@ -421,7 +419,7 @@ a {
   cursor: pointer;
 }
 
-#playAgainN{
+#playAgainN {
   width: 70%;
   font-size: 1.1vw;
   grid-row: 5/6;
@@ -429,7 +427,7 @@ a {
   display: none;
 }
 
-#backToMenuN{
+#backToMenuN {
   width: 70%;
   font-size: 1.1vw;
   grid-row: 5/6;
@@ -437,64 +435,63 @@ a {
   display: none;
 }
 
-
-#reactionTime{
+#reactionTime {
   text-align: center !important;
 }
 
-@media screen and (max-width: 768px){
-  .slide .bigButton{
+@media screen and (max-width: 768px) {
+  .slide .bigButton {
     font-size: 5vw;
     width: 50vw;
     margin-bottom: 2vh;
   }
 
-  .slide li{
+  .slide li {
     font-size: 5vw;
     width: 50vw;
   }
 
-  .slide h2{
+  .slide h2 {
     font-size: 8vw;
     width: 80vw;
   }
 
-  .reactionInstructions p{
+  .reactionInstructions p {
     font-size: 5.5vw;
   }
 
-  .backButton{
+  .backButton {
     font-size: 5vw;
     padding-left: 10vw;
     padding-right: 10vw;
   }
 
-  .selected{
+  .selected {
     border: 1vw solid var(--lighter);
   }
 
-  #headerR h2{
+  #headerR h2 {
     font-size: 3.5vw;
     text-align: center;
   }
 
-  #headerR h3{
+  #headerR h3 {
     font-size: 5vw;
   }
 
-  #playAgainReaction li{
+  #playAgainReaction li {
     width: 50vw;
   }
 
-  #headerN h3{
+  #headerN h3 {
     font-size: 3.2vw;
   }
 
-  #headerN h2{
+  #headerN h2 {
     font-size: 4vw;
   }
 
-  #target{
+  #target {
     border: 0.8vw solid black;
   }
 }
