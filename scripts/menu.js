@@ -11,6 +11,7 @@ $('#reactionSelection').click(function(){
     $('#ninjaSelection').removeClass("selected");
 });
 
+
 $('#ninjaSelection').click(function(){
     ninja = true;
     $('#ninjaSelection').addClass("selected");
@@ -47,7 +48,7 @@ $('#selectionProceed').click(function(){
         $('.modeSelection').hide(100);
         $('.trialsSelection').show(100);
     }
-    else if(ninja==false){
+    else if(!ninja){
         $('.modeSelection').hide(100);
         $('.reactionInstructions').show(100);
     }
@@ -90,3 +91,4 @@ $('#toDifficulty').click(function(){
     $('.difficultySelection').show(100);
     $('.trialsSelection').hide(100);
 })
+

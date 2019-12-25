@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
@@ -25,8 +25,8 @@
 
         <div class="reactionInstructions slide">
             <h2>INSTRUCTIONS</h2>
-            <p>When you see the screen turn red, click anywhere as fast as you can. <br><br>If you click too soon, it won't count.</p>
-            <button id="begin" class="bigButton">Start</button><br>
+            <p>When you see the screen turn green, click anywhere as fast as you can. <br><br>If you click too soon, it won't count.</p>
+            <button class="bigButton begin" id="startReaction">Start</button><br>
             <button class="backToSelection backButton">Go Back</button>
         </div>
 
@@ -48,12 +48,25 @@
                 <li id="medium" class="selected">Medium</li>
                 <li id="hard">NINJA!</li>
             </ul>
-            <button id="toDifficulty" class="bigButton">Start</button><br>
+            <button class="bigButton begin">Start</button><br>
             <button class="backToTrials backButton">Go Back</button>
         </div>
 
     </div>
+    <div class="gameScreen">
+        <h1 id="countdown"></h1>
+        <div class="reactionGame">
+            <div id="headerR">
+                <h2>Your reaction time is:</h2>
+                <h3 id="reactionTime">N/A</h3>
+                <ul id="playAgainReaction">
+                    <li id="playAgainR">Play Again</li>
+                    <li id="backToMenuR">Back to Menu</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="./scripts/menu.js"></script>
-    <script type="text/javascript" src="./scripts/game.js"></script>
+    <script type="text/javascript" src="./scripts/reaction.js"></script>
 </body>
 </html>

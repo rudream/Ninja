@@ -25,15 +25,13 @@ body {
 }
 
 li {
-    list-style: none;
-  }
-  
+  list-style: none;
+}
+
 a {
-    text-decoration: none;
-    color: var(--darker);
-  }
-  
-  
+  text-decoration: none;
+  color: var(--darker);
+}
 
 /* WINDOW */
 
@@ -62,7 +60,7 @@ a {
   border-top-right-radius: 2rem;
 }
 
-.slide{
+.slide {
   position: absolute;
   font-family: "Poppins", sans-serif;
   color: var(--darker);
@@ -74,127 +72,218 @@ a {
   text-align: center;
 }
 
-.slide .bigButton{
-    font-family: Poppins;
-    font-weight: 600;
-    background: var(--lighter);
-    padding: 2vh 6vw;
-    border: 0.2vw solid var(--darker);
-    color: var(--darker);
-    font-size: 2vw;
+.slide .bigButton {
+  font-family: Poppins;
+  font-weight: 600;
+  background: var(--lighter);
+  padding: 2vh 6vw;
+  border: 0.2vw solid var(--darker);
+  color: var(--darker);
+  font-size: 2vw;
 }
 
-.slide button:hover{
-    cursor: pointer;
+.slide button:hover {
+  cursor: pointer;
 }
 
-.slide button:focus{
-    outline: none;
+.slide button:focus {
+  outline: none;
 }
 
-.selected{
-    border: 0.2vw solid var(--lighter);
+.selected {
+  border: 0.2vw solid var(--lighter);
 }
 
-.slide h2{
-    font-family: Poppins;
-    display: inline-block;
-    max-width: 100%;
-    font-size: 4vw;
-    font-weight: 400;
+.slide h2 {
+  font-family: Poppins;
+  display: inline-block;
+  max-width: 100%;
+  font-size: 4vw;
+  font-weight: 400;
 }
 
-.slide li{
-    display: block;
-    width: 30vw;
-    padding: 1vh 2vw;
-    margin: auto;
-    margin-bottom: 5vh;
-    font-weight: 600;
-    background: var(--dark);
-    color: var(--lighter);
+.slide li {
+  display: block;
+  width: 30vw;
+  padding: 1vh 2vw;
+  margin: auto;
+  margin-bottom: 5vh;
+  font-weight: 600;
+  background: var(--dark);
+  color: var(--lighter);
 }
 
-.slide li:nth-child(1){
-    margin-top: 5vh;
+.slide li:nth-child(1) {
+  margin-top: 5vh;
 }
 
-.slide  li:hover{
-    cursor: pointer;
-    box-sizing: border-box;
+.slide li:hover {
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
-.backButton{
-    font-family: Poppins;
-    font-weight: 600;
-    color: var(--darker);
-    margin-top: 1vh;
-    padding: 2vh 2vw;
-    font-size: 1vw;
-    border: 0.2vw solid var(--darker);
-    background: #a3411d;
+.backButton {
+  font-family: Poppins;
+  font-weight: 600;
+  color: var(--darker);
+  margin-top: 1vh;
+  padding: 2vh 2vw;
+  font-size: 1vw;
+  border: 0.2vw solid var(--darker);
+  background: #a3411d;
 }
 
 /* MODE SELECTION */
 
-.modeSelection ul{
-    margin-bottom: 9vh;
+.modeSelection ul {
+  margin-bottom: 9vh;
 }
 
-.modeSelection{
-    display: block;
+.modeSelection {
+  display: block;
 }
 
 /* REACTION INSTRUCTIONS */
 
-.reactionInstructions{
-    left: 50%;
-    top: 50%;
-    display: none;
+.reactionInstructions {
+  left: 50%;
+  top: 50%;
+  display: none;
 }
 
-
-.reactionInstructions p{
-    font-size: 2vw;
-    user-select: text;
+.reactionInstructions p {
+  font-size: 2vw;
+  user-select: text;
 }
 
-.reactionInstructions h2{
-    margin-bottom: 5vh;
+.reactionInstructions h2 {
+  margin-bottom: 5vh;
 }
 
-.reactionInstructions button{
-    margin-top: 3vh;
+.reactionInstructions button {
+  margin-top: 3vh;
 }
-
 
 /* TRIALS SELECTION */
 
-.trialsSelection{
-    display: none;
+.trialsSelection {
+  display: none;
 }
 
-.trialsSelection .backButton{
-    margin-top: 0;
+.trialsSelection .backButton {
+  margin-top: 0;
 }
 
-.trialsSelection li{
-    margin-top: 1vh;
-    margin-bottom: 0vh;
+.trialsSelection li {
+  margin-top: 1vh;
+  margin-bottom: 0vh;
 }
 
-.trialsSelection li:nth-child(3){
-    margin-bottom: 3vh;
+.trialsSelection li:nth-child(3) {
+  margin-bottom: 3vh;
 }
 
 /* DIFFICULTY SELECTION */
 
-.difficultySelection{
-    display: none;
+.difficultySelection {
+  display: none;
 }
 
-.difficultySelection li{
-    margin-top: 1vh;
-    margin-bottom: 2vh;
+.difficultySelection li {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
 }
 
+
+/* GAME */
+
+.gameScreen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-color: var(--background);
+}
+
+#countdown{
+    font-family: Ninjos;
+    font-size: 15vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+.window{
+    display: block;
+}
+
+/* REACTION GAME */
+
+
+.reactionGame #headerR{
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  background-color: var(--lighter);
+  padding: 1vh 2vw;
+  padding-bottom: 2vh;
+  border-bottom: 4px solid var(--darker);
+  border-left: 4px solid var(--darker);
+  border-right: 4px solid var(--darker);
+}
+
+.reactionGame h3{
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 2vw;
+}
+
+.reactionGame h2{
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 1.5vw;
+}
+
+.reactionGame{
+  height: 100vh;
+  width: 100vw;
+}
+
+
+/* PLAY AGAIN REACTION */
+
+#playAgainReaction li{
+  font-family: Poppins;
+  display: block;
+  width: 10vw;
+  padding: 1vh 2vw;
+  margin: auto;
+  margin-bottom: 1vh;
+  font-weight: 600;
+  background: var(--dark);
+  color: var(--lighter);
+  text-align: center;
+  cursor: pointer;
+}
+
+#playAgainReaction li:nth-child(1){
+  margin-top: 3vh;
+}
+
+#playAgainReaction{
+  display: none;
+}
