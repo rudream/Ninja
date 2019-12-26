@@ -52,7 +52,7 @@ function clickReaction(){
         postReaction();
     }
     else{
-        if(timeleft<0){
+        if(timeleftR<0){
             clearTimeout(timeout);
             $('.reactionGame').css({'background':'red'});
             $('#reactionTime').html("TOO SOON!");
